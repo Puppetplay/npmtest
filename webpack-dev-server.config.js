@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const buildPath = path.resolve(__dirname, 'build');
 const nodeModulesPath = path.resolve(__dirname, 'node_modules');
-const lunaRocketModulesPath = path.resolve(__dirname, 'src');
+const ModulesPath = path.resolve(__dirname, 'src');
 const TransferWebpackPlugin = require('transfer-webpack-plugin');
 
 const config = {
@@ -15,7 +15,7 @@ const config = {
     //Config options on how to interpret requires imports
     resolve: {
         alias: {
-            'luna-rocket': lunaRocketModulesPath
+            'myModule': ModulesPath
         },
         extensions: ["", ".js"],
         //node_modules: ["web_modules", "node_modules"]  (Default Settings)
