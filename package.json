@@ -1,5 +1,5 @@
 {
-  "name": "luna-rocket",
+  "name": "mymodule",
   "version": "1.1.0",
   "description": "SKY Platform for Horizon Portal UI components built with React",
   "scripts": {
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://git.duzon.com/ui/luna-rocket.git"
+    "url": "https://github.com/Puppetplay/npmtest.git",
   },
   "author": "DUZON BIZON SKY Strategy Headquarters, UI/UX Development Team",
   "license": "ISC",
