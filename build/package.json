@@ -1,0 +1,34 @@
+{
+  "name": "luna-rocket",
+  "author": "DUZON BIZON SKY Strategy Headquarters, UI/UX Development Team",
+  "version": "1.1.0",
+  "description": "SKY Platform for Horizon Portal UI components built with React",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Puppetplay/npmtest.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "http://git.duzon.com/ui/luna-rocket/issues"
+  },
+  "homepage": "http://git.duzon.com/ui/luna-rocket",
+  "dependencies": {
+    "inline-style-prefixer": "2.0.4",
+    "lodash.merge": "4.6.0",
+    "lodash.throttle": "4.1.1",
+    "moment": "2.15.1",
+    "react": "15.3.2",
+    "react-addons-transition-group": "15.3.2",
+    "react-addons-create-fragment": "15.3.2",
+    "react-dom": "15.3.2",
+    "react-event-listener": "0.3.0",
+    "react-hot-loader": "1.3.0",
+    "react-router": "2.8.1",
+    "react-tap-event-plugin": "1.0.0",
+    "recompose": "0.20.2",
+    "simple-assign": "0.1.0",
+    "keycode": "2.1.6",
+    "warning": "3.0.0"
+  }
+}
