@@ -29,7 +29,7 @@ function copyFile(file) {
 }
 
 function resolveBuildPath(file) {
-  return path.resolve(__dirname, '../build/', path.basename(file));
+  return path.resolve(__dirname, '../lib/', path.basename(file));
 }
 
 function createPackageFile() {
@@ -73,7 +73,7 @@ function createPackageFile() {
     };
 
     return new Promise((resolve) => {
-      const buildPath = path.resolve(__dirname, '../build/package.json');
+      const buildPath = path.resolve(__dirname, '../lib/package.json');
       const data = JSON.stringify(minimalPackage, null, 2);
       fse.writeFile(buildPath, data, (err) => {
         if (err) throw (err);

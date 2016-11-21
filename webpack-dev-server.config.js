@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
-const buildPath = path.resolve(__dirname, 'build');
+const buildPath = path.resolve(__dirname, 'lib');
 const nodeModulesPath = path.resolve(__dirname, 'node_modules');
 const ModulesPath = path.resolve(__dirname, 'src');
 const TransferWebpackPlugin = require('transfer-webpack-plugin');

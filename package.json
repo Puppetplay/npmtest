@@ -7,13 +7,9 @@
     "play": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
     "build": "npm run build:babel && npm run build:copy-files",
 
-    "build_test": "npm run prebuild && npm run build_stage:babel && npm run build_dev:babel && npm run build:copy-files",
-    "build_stage:babel": "babel ./src --ignore *.spec.js --out-dir ./build/stage",
-    "build_dev:babel": "babel ./src --ignore *.spec.js --out-dir ./build/dev",
-
-    "build:babel": "babel ./src --ignore *.spec.js --out-dir ./build",
+    "build:babel": "babel ./src --ignore *.spec.js --out-dir ./lib",
     "build:copy-files": "babel-node ./scripts/copy-files.js",
-    "clean:build": "rimraf build",
+    "clean:build": "rimraf lib",
     "lint": "eslint src docs/src test/browser test/unit && echo \"eslint: no lint errors\"",
     "prebuild": "npm run clean:build",
     "test": "cross-env NODE_ENV=test babel-node test/index.js",
