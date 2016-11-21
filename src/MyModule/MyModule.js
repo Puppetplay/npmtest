@@ -5,7 +5,7 @@ class MyModule extends Component {
     render() {
         return (
             <div>
-                <h1>MyModule</h1>
+                <h1>MyModule!!</h1>
             </div>
         );
     }
