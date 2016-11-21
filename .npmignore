@@ -1,3 +1,4 @@
+# Created by .ignore support plugin (hsz.mobi)
 
 # Created by https://www.gitignore.io/api/osx,windows,pycharm,node
 
@@ -150,4 +151,8 @@ jspm_packages
 .node_repl_history
 
 /build
+/src
+/scripts
+/playground
+webpack-dev-server.config.js
 
