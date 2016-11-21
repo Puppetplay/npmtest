@@ -6,6 +6,11 @@
     "start": "npm run play",
     "play": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
     "build": "npm run build:babel && npm run build:copy-files",
+
+    "build_test": "npm run prebuild && npm run build_stage:babel && npm run build_dev:babel && npm run build:copy-files",
+    "build_stage:babel": "babel ./src --ignore *.spec.js --out-dir ./build/stage",
+    "build_dev:babel": "babel ./src --ignore *.spec.js --out-dir ./build/dev",
+
     "build:babel": "babel ./src --ignore *.spec.js --out-dir ./build",
     "build:copy-files": "babel-node ./scripts/copy-files.js",
     "clean:build": "rimraf build",
