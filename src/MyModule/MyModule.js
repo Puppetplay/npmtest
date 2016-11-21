@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-let config = require("../config/" + process.env.NODE_ENV + "/Portal/apiConfig");
+let config = require("../config/" + process.env.NODE_ENV + "/apiConfig");
 let apiAddress = config.testValue
 
 

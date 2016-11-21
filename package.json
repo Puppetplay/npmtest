@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "SKY Platform for Horizon Portal UI components built with React",
   "scripts": {
-    "start": "npm run play",
+    "start": "NODE_ENV=dev npm run play",
     "play": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
     "build": "npm run build:babel && npm run build:copy-files",
 
